@@ -32,7 +32,7 @@ const SendMoney = () => {
                     </div>
                     <div className='flex w-full mt-4 mb-8'>
                         <button className='text-sm bg-green-500 text-white font-bold rounded-md p-2 w-full' onClick={async () => {
-                            axios.post("http://localhost:3000/api/v1/account/transfer", {
+                            axios.post("https://basic-paytm-api.onrender.com/api/v1/account/transfer", {
                                 to: id,
                                 amount
                             }, {

@@ -32,7 +32,7 @@ const Signup = () => {
                 }} placeholder={"Password"} />
                 <div className='flex mt-8 w-[71%] justify-center items-center'>
                     <Button text={"Signup"} onClick={async () => {
-                        const res = await axios.post("http://localhost:3000/api/v1/user/signup", {
+                        const res = await axios.post("https://basic-paytm-api.onrender.com/api/v1/user/signup", {
                             username,
                             firstname,
                             lastname,

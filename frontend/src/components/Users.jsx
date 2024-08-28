@@ -7,7 +7,7 @@ const Users = () => {
     const [filter, setFilter] = useState("")
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/user/getUser?filter=" + filter, {
+        axios.get("https://basic-paytm-api.onrender.com/api/v1/user/getUser?filter=" + filter, {
             headers: {
                 authentication: "Bearer " + localStorage.getItem("token")
             }

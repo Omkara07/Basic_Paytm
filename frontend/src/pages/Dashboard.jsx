@@ -8,14 +8,14 @@ const Dashboard = () => {
     const [amt, setAmt] = useState(0)
     const [me, setMe] = useState({})
     useEffect(() => {
-        axios.get("http://localhost:3000/api/v1/account/balance", {
+        axios.get("https://basic-paytm-api.onrender.com/api/v1/account/balance", {
             headers: {
                 authentication: "Bearer " + localStorage.getItem("token")
             }
         })
             .then(res => {
                 setAmt(res.data.bal)
-                return axios.get("http://localhost:3000/api/v1/user/me", {
+                return axios.get("https://basic-paytm-api.onrender.com/api/v1/user/me", {
                     headers: {
                         authentication: "Bearer " + localStorage.getItem("token")
                     }
