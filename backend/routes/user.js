@@ -1,6 +1,5 @@
 const express = require('express');
 const { z } = require('zod')
-const { processRequestBody } = require('zod-express-middleware')
 const router = express.Router();
 const jwt = require('jsonwebtoken')
 const { JWT_SECRET } = require('../config')
