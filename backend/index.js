@@ -14,4 +14,4 @@ app.use("/api/v1", mainRouter)
 
 app.listen(PORT);
 
-export default app;
+// export default app;
